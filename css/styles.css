@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    text-align: center;
+    font-weight: bold;
+    margin: 30px 0;
+    color: #c000ff;
+}
+.contenedor{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    height: 400px;
+    margin-top: 5%;
+}
+button{
+    width: 50%;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #c000ff;
+    border: none;
+    color: white;
+}
+button.copiar{
+    width: 100%;
+    margin: 0 20px;
+}
+.caja1{
+    width: 80%;
+    padding: 0 10px;
+}
+textarea{
+    width: 100%;
+    height: 100%;
+    resize: none;
+    margin-bottom: 30px;
+    padding: 10px;
+}
+.caja1 > textarea{
+border: none;
+}
+.caja1 > button{
+    width: 30%;
+    margin: 0 auto;
+}
+.desencriptar{
+    float: inline-end;
+    border-color: #c000ff;
+    background-color: none;
+}
+#texto{
+    font-size: 25px;
+    width: 95%;
+}
+.caja2{
+    width: 30%;
+    padding: 0 10px;
+}
+
+.caja2> textarea{
+    border-radius: 20px;
+   }
+   .img{
+    position: absolute;
+    width: 20%;
+   padding: 20px 10px;
+   display:block;
+   }
+   .img img{
+    width: 100%;
+   }
+
+   @media screen and (max-width: 700px) {
+    .contenedor{
+        width: 90%;
+        margin: 0 40px;
+    }
+    .caja1{
+        width: 100%;
+        
+    }
+    .caja1 > button{
+        width: 50%;
+        margin: 0 auto;
+        
+    }
+    .caja2{
+        width: 100%;
+    }
+    .img{
+        display: none;
+    }
+  }
+
+   @media screen and (max-width: 600px) {
+    .contenedor{
+        display: inline-block;
+        margin: 0 20px;
+    }
+    textarea{
+        width: 90%;
+    }
+    .caja1{
+        width: 90%;
+        margin-bottom: 25px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .caja1 > button{
+        width: 45%;
+    }
+    .caja2{
+        width: 100%;
+    }
+    .img{
+        display: none;
+    }
+    button.copiar{
+        width: 90%;
+        margin: 0 10px;
+    }
+  }
